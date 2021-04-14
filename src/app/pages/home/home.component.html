@@ -1,0 +1,22 @@
+<div *ngFor="let song of newReleases" class="card" style="width: 15rem;">
+        <img [src]="song.images[0].url" class="card-img-top" alt="">
+        <div class="card-body">
+            <h5 class="card-title">{{song.name}}</h5>
+            <div class="card-text">
+                <span *ngFor="let artist of song.artists" class="badge bg-dark"> {{ artist.name }} </span>
+            </div>            
+        </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
